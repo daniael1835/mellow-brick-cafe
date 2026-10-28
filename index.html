@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#fff8f2"><meta name="description" content="톡톡, 달콤하게! 마우스와 터치로 즐기는 귀여운 무료 벽돌깨기 게임.">
+<title>말랑말랑 브릭 카페 · Marshmallow Breakout</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+ <header><a class="brand" href="./"><span class="brand-icon">✿</span> mellow <span>arcade</span></a><div class="header-note">작은 휴식, 달콤한 한 판 <span>✦</span></div><button id="sound" class="icon-btn" aria-label="효과음 켜기" aria-pressed="false">♫ <span>소리 꺼짐</span></button></header>
+ <section class="intro"><div class="eyebrow">FRESHLY BAKED FUN · NO. 01</div><h1>말랑말랑 <span>브릭 카페</span><i>✧</i></h1><p>하루의 딱딱함을 톡톡! 달콤한 벽돌을 깨며 쉬어가요.</p></section>
+ <section class="game-layout">
+  <aside class="left-panel"><div class="label">TODAY’S MENU</div><h2>오늘도<br>말랑하게.</h2><p>작은 공 하나에<br>기분 좋은 리듬을 담아.</p><div class="mascot" aria-hidden="true"><div class="ear e1"></div><div class="ear e2"></div><div class="bunny"><b>•<span>ᴗ</span>•</b><i></i><em></em></div><div class="shadow"></div></div><div class="tip"><span>토끼 사장님의 팁</span><p>패들 끝에 공을 맞히면<br>더 넓은 각도로 날아가요!</p></div><div class="best">나의 최고 기록 <strong id="best">0</strong></div></aside>
+  <div class="game-card"><div class="scorebar"><div><span>SCORE</span><strong id="score">0000</strong></div><div class="stage"><span>STAGE</span><strong id="level">01 <small>/ 05</small></strong></div><div class="lives"><span>LIVES</span><strong id="lives" aria-label="남은 목숨 3">♥ ♥ ♥</strong></div></div><div class="canvas-wrap"><canvas id="game" width="720" height="640" aria-label="벽돌깨기 게임. 방향키 또는 마우스로 이동, 스페이스로 공 발사, P로 일시정지"></canvas><div id="overlay" class="overlay"><div class="overlay-icon" id="overlayIcon">✿</div><div class="eyebrow" id="overlayLabel">A LITTLE SWEET ESCAPE</div><h2 id="overlayTitle">달콤한 한 판, 어때요?</h2><p id="overlayText">토끼 패들로 공을 통통 튕겨<br>말랑한 브릭을 모두 깨주세요.</p><button id="play" class="primary">게임 시작 <span>↗</span></button><small id="overlayHint">마우스 · 방향키 · 터치로 플레이</small></div><div id="toast" class="toast" role="status"></div></div><div class="game-footer"><span><i></i><span id="status">갓 구운 즐거움이 준비됐어요</span></span><button id="pause" disabled>Ⅱ <span>일시정지</span></button></div></div>
+  <aside class="right-panel"><div class="label">HOW TO PLAY</div><div class="instruction"><span class="number">01</span><h3>살랑살랑 이동</h3><p>마우스나 손가락을 움직여요.<br>키보드는 <kbd>←</kbd> <kbd>→</kbd></p></div><div class="instruction"><span class="number">02</span><h3>톡! 공 발사</h3><p>화면을 누르거나<br><kbd>SPACE</kbd> 키를 눌러주세요.</p></div><div class="instruction"><span class="number">03</span><h3>콤보는 달콤해</h3><p>연속으로 브릭을 깨면<br>더 높은 점수를 얻어요!</p></div><div class="memo"><span>✧ SWEET REMINDER</span><p>잠깐 쉬어가도 괜찮아.<br>한 판 더 해도 괜찮고!</p><span class="scribble">have a mellow day ♡</span></div></aside>
+ </section><footer>MADE FOR YOUR LITTLE BREAK <span>✿</span> 서두르지 말고, 즐겁게.</footer>
+</main><script src="game.js"></script>
+</body></html>
